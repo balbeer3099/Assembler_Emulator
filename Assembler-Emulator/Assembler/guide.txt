@@ -1,0 +1,7 @@
+Pre-Requisites: input_opcode.txt should be present in same folder
+Outcomes: everytime symbol_table.txt will be created
+
+running: gcc -o asm asm.c
+        ./asm filename.asm
+
+NOte: Data Segment and Code Segment have been separated as seen in listing file

@@ -1,0 +1,96 @@
+/*****************************************************************************
+TITLE: Claims																																
+AUTHOR:   Balbeer Yadav (1801CS13)
+Declaration of Authorship
+This txt file, claims.txt, is part of the assignment of CS321/CS322 at the 
+department of Computer Science and Engg, IIT Patna . 
+*****************************************************************************/
+
+Language Used : C
+SET implemented : YES
+data implemented: YES (using separate )
+
+Files:
+==========
+*All the files i submitted, asm.c , input_opcode.txt and claims.txt, have my name and student id at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the X (eg five)  test examples has also been uploaded. They are test1(3 output files), test2(3 output files), test3
+(1 output file) and test4(3 output files). All the test files have been tested and work properly. 
+
+*Both of my c programs did not show any errors and warnings when i compiled it with
+gcc -std=c89 -pedantic and gcc -std=c89 -pedantic -W -Wall -Wpointer-arith -Wwrite-strings -Wstrict-prototypes standard  or equilvalent ....or gcc ...
+
+*Two programs are compilable with gcc asm.c -o asm and gcc emu.c -o emu.
+
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+
+    * with two data structures to store respectively labels and mnemonic table with expected operands.
+    * uses a single routine for both passes.
+    * detects label erros.
+    * consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+		* advanced listing file.
+		* assembles test programs.
+	  * can implements and demonstrates the instruction SET.
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested  4/ four examples shown as bellow. The errors only occurred in the file test2.asm and 
+the program immediately stopped on the second pass. 
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example. 
+
+After comparing the listing files and object file of memcpy.asm , memcpy.l, triangle.l memcpy.o 
+with the implemented result given on the assignment, both of them show no difference 
+from those provided( if there is different  that is fine too) 
+ 
+
+1)
+#Input: asm test1.asm
+#Output: 
+a. test1.l 
+b. test1.log (without any error messages)
+c. test1.o
+
+2)
+#Input:asm test2.asm
+#Output: 
+a. test2.l 
+b. test2.log (without error messages shown as below but also in log file)
+c. test2.o
+
+error messages:
+Error: repeated label : label
+Error: invalid label : 0def
+Error: invalid mnemonic in line : 0def
+Error: invalid target label/symbol in line : br nonesuch
+Error: invalid value for command in line : ldc 08ge
+Error: missing argument on line : ldc
+Error: extra argument on line: add 5
+Error: invalid argument format in : ldc 5, 6
+Error: wrong mnemonic on line : fibble
+Error: wrong mnemonic on line : 0def
+
+3)
+#Input:asm test3.asm
+#Output: 
+a. test3.l 
+b. test3.log (without any error messages)
+c. test3.o
+
+4)
+#Input:asm test4.asm
+#Output: 
+a. test4.l
+b. test4.log(without any error messages)
+c. test4.o

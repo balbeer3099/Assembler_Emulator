@@ -1,0 +1,10 @@
+Compile using: gcc -o emu emu.c
+Run using: ./emu -abt [filename].o
+
+note that: 	't' stands for trace
+		'a' stands for after
+		'b' stands for after
+
+all are optional
+
+NOTE: log would be shown in [filename].txt

@@ -1,0 +1,41 @@
+Hash-map Created Successfully!
+NAME:: ldc and CODE:: 0 and format:: v 
+NAME:: adc and CODE:: 1 and format:: v 
+NAME:: ldl and CODE:: 2 and format:: v 
+NAME:: stl and CODE:: 3 and format:: v 
+NAME:: ldnl and CODE:: 4 and format:: v 
+NAME:: stnl and CODE:: 5 and format:: v 
+NAME:: add and CODE:: 6 and format:: z 
+NAME:: sub and CODE:: 7 and format:: z 
+NAME:: shl and CODE:: 8 and format:: z 
+NAME:: shr and CODE:: 9 and format:: z 
+NAME:: adj and CODE:: 10 and format:: v 
+NAME:: a2sp and CODE:: 11 and format:: z 
+NAME:: sp2a and CODE:: 12 and format:: z 
+NAME:: call and CODE:: 13 and format:: a 
+NAME:: return and CODE:: 14 and format:: z 
+NAME:: brz and CODE:: 15 and format:: a 
+NAME:: brlz and CODE:: 16 and format:: a 
+NAME:: br and CODE:: 17 and format:: a 
+NAME:: halt and CODE:: 18 and format:: z 
+Now reading Opcodes and Converting them to machine codes
+
+
+pass 1 finished
+
+
+pass 2 finished
+
+
+object file created
+
+
+Symbol Table
+
+main :: 10
+loop :: 15
+triangle :: 36
+skip :: 48
+one :: 70
+count :: 74
+result :: 75
